@@ -1,4 +1,4 @@
-# Engineering Analyst Assignment
+# Analytics Engineer Assessment
 
 ## Background
 
@@ -6,7 +6,7 @@ At Clair, we're on a mission to create financial freedom for America's workers b
 
 You’ve been provided with sample data from our raw and semi-modeled tables. Your job is to derive key lifecycle metrics and outline how we can transform noisy operational data into useful analytics models.
 
-## Part I – Lifecycle Summary Table
+## Part I – Summary Table
 
 Create a table called `user_lending_readiness` where each row represents a unique user and includes the following metrics:
 
@@ -88,3 +88,19 @@ The `webhook_logs` table is an operational system table that captures many webho
 - How would you handle retries or duplicate webhook entries?
 - How would you validate the structure of JSON payloads?
 - Would you implement tests, alerts, or logging mechanisms? What would they check for?
+
+## **Deliverables**
+
+Please submit the following:
+
+* A **link to your GitHub repository** containing:
+  - The code used to generate the `user_lending_readiness` table
+  - Your `README.md` documenting field derivations, assumptions, and tests
+
+* A **PDF document** that includes:
+  - Your ETL flow design for transforming `webhook_logs` into analytics-ready models
+  - Performance and cost considerations
+  - Data quality monitoring and alerting strategies
+
+Let us know if you have any issues accessing the database, need clarification on the task, or have any questions. Good luck—we’re excited to see your approach!
+
