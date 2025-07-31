@@ -12,20 +12,20 @@ Create a table called `user_lending_readiness` where each row represents a uniqu
 
 ### Source Tables
 
-1. **`stg_prod__users`**
+1. **`EA_assignment_users`**
    - `user_id`
    - `employee_id`
    - `started_onboarding_at`
    - `kyc_status`
    - `date_of_birth`
 
-2. **`stg_gusto_prod__webhook_logs`**
+2. **`EA_assignment_webhooks`**
    - `user_id`
    - `subject_type`
    - `payload` (extract `enrollment_completed_at` from `enrollment.pass` event)
    - `response_status`
    
-3. **`gusto_loans`**
+3. **`EA_assignment_loans`**
    - `loan_uuid`
    - `user_id`
    - `amount`
@@ -34,6 +34,12 @@ Create a table called `user_lending_readiness` where each row represents a uniqu
    - `fully_repaid_at`
    - `is_confirmed`
    - `is_instant`
+  
+All of the tables are hosted on a cloud-hosted PostgreSQL database:
+
+Host: pg-285c4482-getclair-7a3a.a.aivencloud.com  
+Port: 10594  
+Database: assessment
 
 ### Expected Output: `user_lending_readiness`
 
